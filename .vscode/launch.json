@@ -5,13 +5,13 @@
             "name": "Debug PSModule",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "publish",
+            "preLaunchTask": "build",
             "program": "pwsh",
             "args": [
                 "-noprofile",
                 "-noexit",
                 "-c",
-                "Import-Module ${workspaceFolder}/out/PowerShellGet.dll -Verbose"
+                "Import-Module ${workspaceFolder}/out/Microsoft.PowerShell.PSResourceGet/Microsoft.PowerShell.PSResourceGet.dll -Verbose"
             ],
             "cwd": "${workspaceFolder}",
             "console": "externalTerminal",
